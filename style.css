@@ -1,0 +1,433 @@
+* {
+  font-style: sans-serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+body {
+  background-color: #fff685;
+  padding: 0 2% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffa500;
+  border-radius: 5px;
+}
+
+img {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  border-radius: 5px;
+}
+
+a:visited {
+  background-color: green;
+}
+
+.narutoSection {
+  background-color: #fccf3e;
+  width: 90%;
+}
+
+.borutoSection {
+  background-color: white;
+  width: 90%;
+}
+
+.avatarSection {
+  background-color: #8458b3;
+  width: 90%;
+}
+
+.deathNoteSection {
+  background-color: #a9a9a9;
+  width: 90%;
+}
+
+.AOTSection {
+  background-color: #ffa07a;
+  width: 90%;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10%;
+}
+
+.ABCD {
+  margin: 0 3% 3%;
+  padding: 5px;
+  width: 40%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.ABCD.narutoOptions {
+  box-shadow: 5px 6px 7px #c9912b;
+}
+
+.ABCD.BorutoOptions {
+  box-shadow: 5px 6px 10px #3f3f5e;
+}
+
+.ABCD.avatarOptions {
+  box-shadow: 4px 5px 8px #2d3a6d;
+}
+
+.ABCD.deathNoteOptions {
+  box-shadow: 7px 8px 8px rgb(97, 94, 94);
+}
+
+.ABCD.AOTOptions {
+  box-shadow: 5px 6px 6px #e45e5e;
+}
+
+img.narutoOptions {
+  box-shadow: 6px 8px 7px #cc9a3e;
+}
+
+img.BorutoOptions {
+  box-shadow: 6px 8px 10px #3f3f5e;
+}
+
+img.avatarOptions {
+  box-shadow: 5px 6px 10px #2d3a6d;
+}
+
+img.deathNoteOptions {
+  box-shadow: 8px 10px 8px rgb(97, 94, 94);
+}
+
+img.AOTOptions {
+  box-shadow: 6px 8px 9px #e45e5e;
+}
+
+.ABCD:hover {
+  transform: scale(1.1);
+}
+
+.ABCDNaruto {
+  border: 1px solid black;
+  background-color: #fa8223;
+}
+
+.ABCDBoruto {
+  border: 1px solid #2541b2;
+  background-color: #00ffff;
+}
+
+.ABCDAvatar {
+  border: 1px solid black;
+  background-color: #d0bdf4;
+}
+.ABCDDeathNote {
+  border: 1px solid black;
+  background-color: wheat;
+}
+.ABCDAOT {
+  border: 1px solid black;
+  background-color: #cd5c5c;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+li > a {
+  color: black;
+}
+
+h3 > p {
+  font-size: 120%;
+}
+
+.image {
+  width: 85%;
+  height: 90%;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-left: 5%;
+  margin-right: 3%;
+  box-shadow: 2px 8px 6px 0px#80570d;
+}
+
+.image:hover {
+  transform: scale(1.3);
+  box-shadow: 3px 8px 8px 2px #80570d;
+}
+
+footer {
+  padding-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indexFooter {
+  padding-top: 14%;
+}
+
+/*          Avatar Animation start */
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+h1.avatarAnimation,
+h1.avatarAnimation:before,
+h1.avatarAnimation:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+h1.Avatar {
+  color: white;
+  text-shadow: 0.08em 0.05em 0 hsla(230, 40%, 50%, 1);
+  margin: 0 0 5% 30%;
+}
+
+h1.avatarAnimation {
+  display: inline-block;
+  color: white;
+  font-family: "Righteous", serif;
+  font-size: 5em;
+  text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
+}
+h1.avatarAnimation:after {
+  content: attr(data-shadow);
+  position: absolute;
+  top: 0.06em;
+  left: 0.06em;
+  z-index: -1;
+  text-shadow: none;
+  background-image: linear-gradient(
+    45deg,
+    transparent 45%,
+    black 65%,
+    hsla(48, 20%, 90%, 1) 55%,
+    transparent 0
+  );
+  background-size: 0.05em 0.05em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shad-anim 15s linear infinite;
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
+}
+/*          Avatar Animation end */
+
+/*          Death Note Animation Start */
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+h1.deathNote {
+  font-size: calc(10px + 10vh);
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 10s infinite;
+  -webkit-animation: blink 10s infinite;
+  margin: 0;
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+/*          Death Note Animation end */
+
+/*          Naruto Animation start */
+
+h1.gradient-text {
+  margin: 2rem 0 0 0;
+}
+
+.gradient-text {
+  font-size: 3rem;
+  background-color: purple;
+  background-image: linear-gradient(45deg, #646012, #af4261);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+/*          Naruto Animation end */
+
+/*          Boruto Animation start */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+.heading {
+  color: whitesmoke;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 32px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+div.heading:first-of-type {
+  animation: showup 7s infinite;
+}
+
+div.heading:last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite;
+}
+
+div.heading:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
+
+/*          Boruto Animation end    */
+
+@media (max-width: 556px) {
+  .ABCD {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  p {
+    margin-left: 3%;
+    width: 100%;
+  }
+
+  h1.Avatar {
+    margin-left: 0;
+  }
+}
